@@ -15,7 +15,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: https://budget-wise-discovery-server-production.up.railway.app
+      defaultZone: https://budget-wise-discovery-server-production.up.railway.app/eureka/
 server:
   port: ${PORT}
 application:
