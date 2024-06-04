@@ -9,6 +9,9 @@ spring:
     jpa:
       hibernate:
         ddl-auto: none
+  cloud:
+    config:
+      enabled: false
 eureka:
   client:
     service-url:
