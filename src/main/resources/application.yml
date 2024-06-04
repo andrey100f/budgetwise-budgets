@@ -2,7 +2,7 @@ spring:
   application:
     name: budgets
   datasource:
-    # driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://root:HvItAsyneHVgnydtBGYjNzEunyRapFrF@viaduct.proxy.rlwy.net:18638/railway
     username: root
     password: HvItAsyneHVgnydtBGYjNzEunyRapFrF
