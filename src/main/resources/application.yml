@@ -20,4 +20,4 @@ server:
   port: ${PORT}
 application:
   config:
-    expenses-url: budgetwise-expenses-production.up.railway.app
+    expenses-url: https://budgetwise-expenses-production.up.railway.app
