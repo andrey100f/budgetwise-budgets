@@ -25,13 +25,13 @@ public class BudgetService {
         return this.budgetRepository.findAll().stream()
             .map(this.budgetMapper::mapToDto)
             .map(budgetDto -> {
-                List<ExpenseDto> expenses = this.expenseClient.findExpensesByBudget(budgetDto.id());
+                // List<ExpenseDto> expenses = this.expenseClient.findExpensesByBudget(budgetDto.id());
                 return BudgetDto.builder()
                     .id(budgetDto.id())
                     .name(budgetDto.name())
                     .amount(budgetDto.amount())
                     .createdAt(budgetDto.createdAt())
-                    .expenses(expenses)
+                    // .expenses(expenses)
                     .userId(budgetDto.userId())
                     .build();
             })
