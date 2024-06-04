@@ -1,13 +1,6 @@
 spring:
   application:
     name: budgets
-eureka:
-  client:
-    service-url:
-      defaultZone: https://budget-wise-discovery-server-production.up.railway.app
-server:
-  port: ${PORT}
-spring:
   datasource:
     # driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
     url: mysql://root:HvItAsyneHVgnydtBGYjNzEunyRapFrF@viaduct.proxy.rlwy.net:18638/railway
@@ -16,6 +9,12 @@ spring:
     jpa:
       hibernate:
         ddl-auto: none
+eureka:
+  client:
+    service-url:
+      defaultZone: https://budget-wise-discovery-server-production.up.railway.app
+server:
+  port: ${PORT}
 application:
   config:
     expenses-url: http://localhost:8090/api/expenses
